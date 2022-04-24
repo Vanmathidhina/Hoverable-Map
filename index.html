@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Hoverable-Hotspot</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+<body>
+    <div class="container">
+         <h1>This is Map of Singapore</h1>
+         <h3>You can click on the spots to get information  about the clicked spot!! </h3>
+    </div>
+
+    <marquee direction="right" class="moving" bgcolor="white">click on spot</marquee>
+    <hr size="6" color="RED">
+    <img  src="images/singapore-map.gif"  class="center" usemap="#pagemap">
+    <map name="pagemap">
+    <area shape="circle" coords="299,160,25" alt="sembawang"     href="sembawag.html"      onmouseover="load_sembawag()">
+    <area shape="circle" coords="277,217,25" alt="neesoon"       href="neesoon.html"       onmouseover="load_neesoon()" >
+    <area shape="circle" coords="328,277,25" alt="angmokio"      href="angmokio.html"      onmouseover="load_angmokio()" >
+    <area shape="circle" coords="394,223,25" alt="serangoon"     href="serangoon.html"     onmouseover="load_serangoon()" >
+    <area shape="circle" coords="465,214,25" alt="ubin"          href="ubin.html"          onmouseover="load_ubin()">
+    <area shape="circle" coords="228,176,25" alt="woodlands"     href="woodlands.html"     onmouseover="load_woodlands()">
+    <area shape="circle" coords="98,261,25"  alt="choachukang"   href="choachukang.html"   onmouseover="load_chachukang()">
+    <area shape="circle" coords="60,341,25"  alt="tuas"          href="tuas.html"          onmouseover="load_tuas()">
+    <area shape="circle" coords="321,341,25" alt="littleindia"   href="littleindia.html"   onmouseover="load_littleindia()" >
+    </map>
+
+    <div id="description"></div>
+
+    
+
+  <script>
+  
+function load_littleindia() {
+     document.getElementById("description").innerHTML='<object type="text/html" data="littleindia.html" ></object>';
+}
+
+function load_tuas() {
+     document.getElementById("description").innerHTML='<object type="text/html" data="tuas.html" ></object>';
+}
+
+function load_chachukang() {
+     document.getElementById("description").innerHTML='<object type="text/html" data="choachukang.html" ></object>';
+}
+
+function load_woodlands() {
+     document.getElementById("description").innerHTML='<object type="text/html" data="woodlands.html" ></object>';
+}
+
+function load_ubin() {
+     document.getElementById("description").innerHTML='<object type="text/html" data="ubin.html" ></object>';
+}
+
+function load_serangoon() {
+     document.getElementById("description").innerHTML='<object type="text/html" data="serangoon.html" ></object>';
+     }
+
+function load_angmokio() {
+     document.getElementById("description").innerHTML='<object type="text/html" data="angmokio.html" ></object>';
+}
+
+function load_neesoon() {
+     document.getElementById("description").innerHTML='<object type="text/html" data="neesoon.html" ></object>';
+}
+
+function load_sembawag() {
+     document.getElementById("description").innerHTML='<object type="text/html" data="sembawag.html" ></object>';
+}
+      
+
+  </script>
+</body>
+</html>
